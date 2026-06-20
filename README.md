@@ -66,6 +66,13 @@ A professional FastAPI-based service that provides high-performance vector embed
 
 ### Docker Setup
 
+#### Option 1: Run from Docker Hub (Quickest)
+You can run the pre-built image directly from Docker Hub:
+```bash
+docker run -p 8000:8000 eliallight/searchapi2:latest
+```
+
+#### Option 2: Build from Source
 1. **Build the image**:
    ```bash
    docker build -t embedding-api .
