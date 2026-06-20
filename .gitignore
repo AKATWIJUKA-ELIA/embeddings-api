@@ -1,8 +1,4 @@
 /Model
 /ImageModel
 /virtual
-
-*.onnx
-*.safetensors
-*.h5
-*.msgpack
+models*

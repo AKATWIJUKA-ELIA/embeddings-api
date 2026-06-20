@@ -17,8 +17,8 @@ A professional FastAPI-based service that provides high-performance vector embed
 ├── Dockerfile              # Docker configuration for deployment
 ├── main.py                 # FastAPI application logic
 ├── requirements.txt        # Python dependencies
-├── ImageModel/             # CLIP model weights and configuration
-└── Model/                  # SentenceTransformer model weights and configuration
+├── ImageModel/             # CLIP model weights (Ignored by git)
+└── Model/                  # SentenceTransformer model weights (Ignored by git)
 ```
 
 ## 📋 Prerequisites
@@ -32,11 +32,23 @@ A professional FastAPI-based service that provides high-performance vector embed
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd <project-folder>
+   - mkdir <your-folder>
+   - cd <your-folder> && git clone https://github.com/AKATWIJUKA-ELIA/embeddings-api.git
+   
    ```
 
-2. **Create and activate a virtual environment**:
+2. **Download Model Weights**:
+   Since the model directories are ignored by git, you need to download the pre-bundled model weights:
+   ```bash
+   # Download the models archive
+   wget <URL_TO_MODELS_TAR> -O models.tar
+
+   # Extract the models into the project root
+   tar -xvf models.tar
+   ```
+   This will create the required `Model/` and `ImageModel/` directories.
+
+3. **Create and activate a virtual environment**:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
