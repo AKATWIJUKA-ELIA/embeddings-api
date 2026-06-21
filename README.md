@@ -41,7 +41,7 @@ A professional FastAPI-based service that provides high-performance vector embed
    Since the model directories are ignored by git, you need to download the pre-bundled model weights:
    ```bash
    # Download the models archive
-   wget <URL_TO_MODELS_TAR> -O models.tar
+    - https://drive.google.com/file/d/1Zljffc-t0PLy_5NcF3hmG3spnJYB1MoF/view?usp=sharing
 
    # Extract the models into the project root
    tar -xvf models.tar
